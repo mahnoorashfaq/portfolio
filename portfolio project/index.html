@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>My Portfolio</title>
+</head>
+<body>
+  <!-- Nav Section start-->
+  <nav>
+    <div class="logo">
+      <h1>Portfolio.</h1>
+    </div>
+  <ul id="menu-list">
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#About">About</a></li>
+    <li><a href="#Skills">Skills</a></li>
+    <li><a href="#Contact">Contact</a></li>
+  </ul>
+  <div class="menu-icon">
+    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+  </div>
+  </nav>
+  <!-- Nav Section end-->
+<!-- Hero Section start-->
+   <section id="Home">
+    <div class="hero-section"> 
+     <div class="right-container">
+     <p>Hi, I am<br />
+    Mahnoor Ashfaq<br />
+    <span>I am Front-End Developer</span></p>
+    <button>Download CV</button>
+  </div>
+  <div class="left-container">
+    <img src="frontend.avif" alt="Profile">
+  </div>
+</div>
+</section>
+<!-- Hero Section end-->
+ <!-- About Section start-->
+  <section id="About">
+    <div class="about-section"> 
+      <div class="about-right">
+        <img src="about.png" alt="about">
+      </div>
+      <div class="about-left">
+        <h1>About Us</h1>
+   <p>As a passionate and aspiring front-end developer, I am dedicated to building 
+      user-friendly websites and applications. I have a solid foundation in HTML,
+      CSS, JavaScript and Typescript and am eager to continue growing my skills
+      in modern frameworks and responsive design. I’m excited to bring creativity
+      and functionality together in every project I work on.</p>
+   </div>
+ </div>
+</section>
+   <!-- About Section end-->
+    <!-- Skill Section start-->
+<section id="Skills">
+ <div class="skill-container">
+    <h1>My Skills</h1>
+    <br />
+    <li><h3>Html</h3>
+    <span class="bar"><span class="Html"></span></span></li>
+    <li><h3>Css</h3>
+      <span class="bar"><span class="Css"></span></span></li>
+      <li><h3>JavaScript</h3>
+        <span class="bar"><span class="Javascript"></span></span></li>
+        <li><h3>Typescript</h3>
+          <span class="bar"><span class="Typescript"></span></span></li>
+ </div>
+</section>
+        <!-- skill Section end-->
+     <!-- Contact Section start-->
+      <section id="Contact">
+        <div class="left-contact">
+          <img src="contact.png" alt="contact">
+        </div>
+        <div class="right-contact">
+     <h2>Contact Us</h2>
+      <input type="text" id="name" placeholder="Enter Your Name"><br />
+      <input type="mail" id="mail" placeholder="Type E-mail"><br />
+      <textarea name="comment" id="comment" placeholder="Type Message" rows="4" cols="22"></textarea><br />
+      <button>Send</button>
+        </div>   
+      </section>
+       <!-- Contact Section end-->
+           <!-- Footer Section start-->
+            <section class="Footer">
+             <div class="footer-icon">
+             <a href=""> <i class="fa-brands fa-facebook"></i></a>
+             <a href="https://www.linkedin.com/in/mahnoor-ashfaq-4bb297248/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+             <a href="https://discord.com/channels/@me" target="_blank"><i class="fa-brands fa-discord"></i></a>
+             <a href="https://github.com/mahnoorashfaq" target="_blank"><i class="fa-brands fa-github"></i></a>
+             </div>
+             <div class="footer-nav">
+              <ul>
+                <li><a href="#Home" style="color: rgb(0, 132, 255);">Home</a></li>
+                <li><a href="#About" style="color: rgb(0, 132, 255);">About</a></li>
+                <li><a href="#Skills" style="color: rgb(0, 132, 255);">Skill</a></li>
+                <li><a href="#Contact" style="color: rgb(0, 132, 255);">Contact</a></li>
+              </ul>
+             </div>
+            </section>
+            <div class="nav-button">
+              <p>Copyright &copy; 2024 Design By Mahnoor Ashfaq</p>
+             </div>
+                 <!-- Footer Section end-->
+  <script>
+    let menuList = document.getElementById("menu-list")
+    menuList.style.maxHeight = "0px";
+    function toggleMenu() {
+      if(menuList.style.maxHeight == "0px") 
+      {
+        menuList.style.maxHeight = "300px";
+      }
+      else
+      menuList.style.maxHeight = "0px";
+    }
+  </script>
+  </body>
+</html>
